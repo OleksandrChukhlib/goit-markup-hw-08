@@ -1,0 +1,32 @@
+.clients-list {
+  display: flex;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients-list__link {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  color: $borderColor;
+  border: 1px solid $borderColor;
+  border-radius: 4px;
+
+  transition: color $tamingFunction cubic-bezier(0.4, 0, 0.2, 1),
+    border $tamingFunction cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    border: 1px solid $accentColor;
+  }
+}
+
+.clients-list__icon {
+  fill: currentColor;
+}

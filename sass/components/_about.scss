@@ -1,0 +1,32 @@
+.section--padding {
+  padding-top: 0;
+}
+
+.about {
+  display: flex;
+}
+
+.about__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.about__text {
+  position: absolute;
+  bottom: 0;
+
+  width: 370px;
+  padding: 27px 0;
+
+  background-color: $bgCardColor;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: $whiteColor;
+}

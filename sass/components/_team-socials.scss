@@ -1,0 +1,32 @@
+.team-socials {
+  display: flex;
+  justify-content: center;
+}
+
+.team-socials__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  align-items: center;
+  list-style: none;
+  color: #afb1b8;
+  border-radius: 50px;
+
+  transition: color $tamingFunction cubic-bezier(0.4, 0, 0.2, 1),
+    background-color $tamingFunction cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+    color: $whiteColor;
+  }
+
+  &--margin {
+    margin-right: 0;
+  }
+}
+
+.team-socials__icon {
+  fill: currentColor;
+}

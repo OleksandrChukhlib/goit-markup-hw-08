@@ -1,0 +1,25 @@
+.address__link {
+  display: inline-block;
+  margin-bottom: 9px;
+
+  color: $addressLinkColor;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+
+  transition: color $tamingFunction cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--margin {
+    margin-bottom: 0;
+  }
+
+  &--color {
+    color: $whiteColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}

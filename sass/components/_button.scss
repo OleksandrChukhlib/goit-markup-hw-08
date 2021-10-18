@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  color: $whiteColor;
+  background-color: $accentColor;
+  box-shadow: $boxShadowColor;
+  cursor: pointer;
+  font-family: $mainFont;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: none;
+
+  transition: background-color $tamingFunction cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $btnHoverColor;
+  }
+}
