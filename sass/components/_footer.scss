@@ -7,15 +7,15 @@
   background-color: $bgColor;
 }
 
-.footer--flex {
-  display: flex;
+.footer__left-block {
+  text-align: center;
 }
 
 // Footer logo
 
 .footer__logo {
-  display: inline-block;
   margin-bottom: 20px;
+  display: inline-block;
 }
 
 .logo__text--color {

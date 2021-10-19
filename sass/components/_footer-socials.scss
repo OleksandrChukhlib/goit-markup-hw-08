@@ -1,8 +1,6 @@
 .footer-socials {
-  width: 206px;
-  height: 80px;
-  margin-left: 70px;
-  padding-top: 12px;
+  margin-top: 60px;
+  text-align: center;
 }
 
 .footer-socials__text {
@@ -18,6 +16,7 @@
 
 .footer-socials__list {
   display: flex;
+  justify-content: center;
 }
 
 .footer-socials__item:not(:last-child) {
