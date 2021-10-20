@@ -48,8 +48,48 @@ body {
   padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .header {
   border-bottom: 1px solid #ececec;
+}
+
+.header__container--flex {
+  position: relative;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__tools {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 48px 40px;
+}
+
+.header__tools.is-open {
+  display: block;
 }
 
 .logo {
@@ -65,14 +105,84 @@ body {
   color: #000000;
 }
 
-.header__nav {
-  min-height: 60px;
+.site-nav__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.site-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.site-nav__link {
+  position: relative;
+  color: #212121;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__link--current {
+  color: #2196f3;
+}
+
+.site-nav__link:hover, .site-nav__link:focus {
+  color: #2196f3;
+}
+
+.auth-nav {
+  margin-top: 302px;
+  color: #757575;
+}
+
+.auth-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.auth-nav__link {
+  display: inline-block;
+  color: #2196f3;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-nav__link--font-size {
+  font-size: 24px;
+  line-height: 28px;
+  color: #757575;
+}
+
+.auth-nav__link:hover, .auth-nav__link:focus {
+  color: #2196f3;
+}
+
+.header-socials {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-top: 54px;
+}
+
+.header-socials__item:not(:last-child) {
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.header-socials__link {
+  display: inline-block;
+  padding-right: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .header__button {
+  position: relative;
   display: inline-flex;
   padding: 0;
   border: none;
@@ -80,6 +190,18 @@ body {
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+}
+
+.icon-menu {
+  display: none;
+}
+
+.header__button.is-open .icon-menu {
+  display: block;
+}
+
+.header__button.is-open .icon-cross {
+  display: none;
 }
 
 .filter {
