@@ -1,5 +1,7 @@
 @import "./base/nullstyles";
 @import "./utils/variabless";
+@import "./utils/visually-hidden";
+@import "./utils/mixins";
 @import "./components/body";
 @import "./components/container";
 @import "./components/header";
@@ -15,5 +17,4 @@
 @import "./components/address";
 @import "./components/footer-socials";
 @import "./components/mail-form";
-@import "./utils/visually-hidden";
 @import "./components/modal";
