@@ -1,5 +1,5 @@
 .hero {
-  @media screen and (max-width: 676px) {
+  @media screen and (max-width: 767px) {
     max-width: 480px;
     height: 400px;
     margin: 0 auto;
@@ -18,8 +18,48 @@
     background-size: 480px 400px;
     background-position: center;
   }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 118px;
+
+    text-align: center;
+    background-color: $bgColor;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/tablet/header-img-768.jpg");
+    background-size: 768px 400px;
+    background-position: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 200px;
+
+    text-align: center;
+    background-color: $bgColor;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/desktop/header-img-1600.jpg");
+    background-size: 1600px 600px;
+    background-position: center;
+  }
 }
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 767px) {
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -35,7 +75,42 @@
   }
 }
 
+@media screen and (min-width: 767px) {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/images/tablet/header-img-1535.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/images/desktop/header-img-3200.jpg");
+    }
+  }
+}
+
 .hero__title {
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -45,4 +120,17 @@
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    color: $whiteColor;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
