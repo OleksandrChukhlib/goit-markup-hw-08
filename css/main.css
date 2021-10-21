@@ -323,6 +323,7 @@ body {
 
 .header-socials {
   display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
@@ -337,7 +338,7 @@ body {
 }
 
 .header-socials__link {
-  display: inline-block;
+  display: flex;
   padding-right: 10px;
   font-weight: 500;
   font-size: 18px;
@@ -373,6 +374,38 @@ body {
 
 .header__button.is-open .icon-cross {
   display: none;
+}
+
+@media screen and (max-width: 676px) {
+  .hero {
+    max-width: 480px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 118px;
+    text-align: center;
+    background-color: #2f303a;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/header-img-480.jpg");
+    background-size: 480px 400px;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 676px) and (min-device-pixel-ratio: 2), screen and (max-width: 676px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 676px) and (min-resolution: 192dpi), screen and (max-width: 676px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/header-img-960.jpg");
+  }
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .button {

@@ -227,6 +227,7 @@
 
 .header-socials {
   display: flex;
+  flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -241,7 +242,7 @@
 }
 
 .header-socials__link {
-  display: inline-block;
+  display: flex;
   padding-right: 10px;
 
   font-weight: 500;
