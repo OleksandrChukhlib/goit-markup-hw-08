@@ -1,13 +1,28 @@
 .clients-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: -15px;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+  }
 }
 
 .clients-list__item {
-  width: calc((100% - 2 * 30px) / 2);
-  margin: 15px;
+  @media screen and (max-width: 1199px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .clients-list__link {
@@ -15,7 +30,7 @@
   align-items: center;
   justify-content: center;
 
-  padding: 16px 52px;
+  padding: 16px 0;
 
   color: $borderColor;
   border: 1px solid $borderColor;

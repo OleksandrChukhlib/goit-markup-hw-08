@@ -1,5 +1,20 @@
 .mail-form {
-  margin-top: 60px;
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 10px;
+    margin-left: auto;
+  }
 }
 
 .mail-form__field {
@@ -16,9 +31,14 @@
   text-transform: uppercase;
   color: $whiteColor;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .mail-form__input {
+  height: 50px;
   margin: 0;
   padding: 15px 0 15px 16px;
   border: 1px solid $inputBorderColor;
@@ -42,6 +62,10 @@
 
     color: $addressLinkColor;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .mail-form__button {
@@ -53,6 +77,10 @@
   margin: 0 auto;
   padding: 0;
   margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .button__icon {
