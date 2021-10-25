@@ -468,8 +468,8 @@
 }
 
 .button--size {
-  width: 200px;
-  height: 50px;
+  max-width: 200px;
+  max-height: 50px;
   margin-left: auto;
   margin-right: auto;
 }
