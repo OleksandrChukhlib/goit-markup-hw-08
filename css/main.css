@@ -101,6 +101,10 @@ body {
   }
 }
 
+.header__tools {
+  z-index: 9;
+}
+
 .header__tools.is-open {
   display: block;
 }
@@ -348,6 +352,7 @@ body {
 }
 
 .header__button {
+  z-index: 10;
   position: relative;
   display: inline-flex;
   padding: 0;
