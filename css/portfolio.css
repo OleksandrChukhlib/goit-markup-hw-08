@@ -382,7 +382,6 @@ body {
 }
 
 .filter {
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -392,6 +391,18 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
@@ -543,6 +554,13 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .section__title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -551,6 +569,14 @@ body {
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .clients-list {
